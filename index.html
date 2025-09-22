@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js" defer></script>
+    <title>Proyecto Empresa Aliada</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hound Express</h1>
+        <section id="header">
+            <a href="index.html"><img src="img/logo-Hound_Express-bg-white.png" alt="Hound_Express"></a>
+            <nav>
+                <ul>
+                    <a href="#header">Inicio</a>
+                    <a href="#registro">Registro</a>
+                    <a href="#estado-general">Guías</a>
+                    <a href="#panel-estado">Panel</a>
+                    <a href="#buscar-guias">Buscar</a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="principal">
+            <p>
+                En Hound Express trabajamos para brindar soluciones unificadas de logística y comercio internacional.
+                Constantemente agregamos valor e innovación a nuestros clientes mediante tecnología propia que permite
+                el acceso inmediato a la información; contamos con equipo humano altamente calificado y con profundo
+                conocimiento de logística y comercio exterior; operamos en las aduanas clave del país con
+                certificaciones internacionales que avalan nuestro trabajo y compromiso.
+                Esto nos convierte en un socio estratégico, referente en servicios de ecommerce, carga, paquetería y
+                aduana para clientes nacionales e internacionales.
+                Nuestra prioridad es fomentar el desarrollo de los principales grupos de interés; buscando un impacto
+                positivo que logre crecimiento, rentabilidad, responsabilidad social y cuidado del medio ambiente.
+            </p>
+        </section>
+
+        <section id="registro"> <!-- Registro de guías -->
+            <h2>Registro de Guías</h2>
+            <form>
+                <!-- Destinatario -->
+                <input type="text" id="destinatario" name="destinatario" placeholder="Destinatario" required>
+
+                <!-- Estado -->
+                <input type="text" id="estado" name="estado" value="Pendiente" disabled>
+
+                <!-- Número de guía -->
+                <input type="number" id="numero" name="numero" placeholder="Número de guía" required>
+                <span id="error-numero" class="error" style="display: none;">Número de guía registrado, coloca otro
+                    número</span>
+
+                <!-- Origen -->
+                <input type="text" id="origen" name="origen" placeholder="Origen" required>
+
+                <!-- Destino -->
+                <input type="text" id="destino" name="destino" placeholder="Destino" required>
+
+                <!-- Fecha -->
+                <input type="date" id="fecha" name="fecha" disabled>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+
+        <section id="estado-general"> <!-- Mostrar guías registradas -->
+            <table>
+                <caption>Guías Registradas</caption>
+                <thead>
+                    <tr>
+                        <th>Destinatario</th>
+                        <th>Estado</th>
+                        <th>Número</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Fecha registro</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="no-data" colspan="7">No hay guías registradas.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section><!-- Ventana Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="modal-close" class="modal-close">&times;</span>
+                    <h2>Detalles de la Guía</h2>
+                    <div id="modal-body">
+                        <!-- Aquí se mostrarán los datos -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="panel-estado"><!-- Panel de Estado General -->
+            <table>
+                <caption>Panel de Estado General</caption>
+                <thead>
+                    <tr>
+                        <th>Total de guías activas</th>
+                        <th>Guías pendientes</th>
+                        <th>Guías en tránsito</th>
+                        <th>Guías entregadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="totales-estado">
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="buscar-guias" class="buscar-guias-section"><!-- Buscar Guia -->
+            <h2>Buscar Guías</h2>
+            <form id="form-buscar-guia">
+                <input type="number" id="guia" name="guia" placeholder="Ingrese un número de guía">
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="resultado-busqueda" style="margin-top: 10px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="header">
+            <a href="index.html"><img src="img/logoAzulBlancoHE.png" alt="Hound_Express"></a>
+            <nav class="footer-nav">
+                <ul>
+                    <a href="#header">Inicio</a>
+                    <a href="#registro">Registro</a>
+                    <a href="#estado-general">Guías</a>
+                    <a href="#panel-estado">Panel</a>
+                    <a href="#buscar-guias">Buscar</a>
+                </ul>
+            </nav>
+        </section>
+        <p>Copyright &#x000A9; 2025 Hound Express. Todos los derechos reservados.</p>
+        <p>Osvaldo Felipe Rodríguez Bautista</p>
+    </footer>
+
+</body>
+
+</html>
