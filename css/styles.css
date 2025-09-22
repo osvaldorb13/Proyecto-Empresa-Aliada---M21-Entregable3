@@ -1,0 +1,352 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #091E3F;
+    margin: 0;
+}
+
+/* Principal */
+#principal {
+    width: 1500px;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#principal img {
+    width: 50%;
+}
+
+#principal p {
+    padding: 20px;
+    background-color: #091E3F;
+    color: #ffffff;
+}
+
+/* Header */
+header h1 {
+    font-style: oblique;
+    text-align: center;
+    background-color: #091E3F;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+#header {
+    margin-top: 15px;
+    display: flex    ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;}
+
+#header img {
+    width: 250px;
+}
+
+#header nav ul {
+    padding: 10px;
+}
+
+#header nav ul a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#header nav ul a:hover {
+    color: #6AC6DE;
+}
+
+/* Registro */
+#registro {
+    width: 1500px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#registro h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #6AC6DE;
+}
+
+#registro form {
+    /* width: 1700px;
+    margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#registro form input {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid #6AC6DE;
+    padding: 10px;
+}
+
+#registro form button {
+    width: 500px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #091E3F;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#registro form button:hover {
+    background-color: #6ac6de;
+    color: #ffffff;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin: 10px;
+    display: block;
+}
+
+/* Estado General */
+#estado-general {
+    padding: 40px;
+    box-sizing: border-box;
+    width: 1500px;
+    margin: auto;
+}
+
+#estado-general h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #6AC6DE;    
+}
+
+table caption {
+    font-size: 30px;
+    font-weight: 900;
+    color: #6ac6de;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+}
+  
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+  
+th {
+    background-color: #091E3F;
+    color: #ffffff;
+}
+
+.no-data {
+    text-align: center;
+    color: #e30f0f;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.acciones {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Estilos para ventana modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000; /* Por encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Scroll si es necesario */
+  background-color: rgba(0,0,0,0.5); /* Fondo semitransparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Centrado vertical y horizontal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.botones-modal {
+    width: 450px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #091E3F;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.select-modal {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid #6AC6DE;
+    padding: 10px;
+}
+
+/*panel-estado*/
+#panel-estado {
+    padding: 40px;
+    box-sizing: border-box;
+    width: 1500px;
+    margin: auto;
+}
+
+/* Buscar Guías */
+#buscar-guias {
+    box-sizing: border-box;
+    background-color: #6AC6DE;
+    padding: 20px;
+    width: 1400px;
+    margin: 50px auto;
+}
+
+#buscar-guias h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#buscar-guias input {
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #6AC6DE;
+    padding: 10px;
+    margin: 10px 400px;
+}
+
+#buscar-guias button {
+    width: 520px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #091E3F;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 10px 400px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #091E3F;
+}
+
+footer nav ul a {
+    color: #6AC6DE;
+}
+
+.footer-nav ul a:hover {
+    color: #fefefe;
+}
+
+footer p {
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    background-color: #091E3F;
+    color: #ffffff;   
+}
+
+
+/* Media Queries */
+
+/* Tablets (desde 768px hasta 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+
+    #principal, #registro, #estado-general, #panel-estado, #buscar-guias {
+        width: 90%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #buscar-guias input, #buscar-guias button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+
+/* Celulares (hasta 767px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    #header, #principal {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    #registro form input, #registro form button, .botones-modal, .select-modal {
+        width: 90%;
+    }
+
+    table, th, td {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    #buscar-guias input, #buscar-guias button {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
